@@ -2,7 +2,7 @@
 
 class TreeNode {
   public left: TreeNode | null;
-  public data: Number;
+  public data: number;
   public right: TreeNode | null;
 
   constructor(data: number) {
