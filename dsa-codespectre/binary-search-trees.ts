@@ -95,14 +95,6 @@ BSTree.insert(BSTree.head, 80);
 
 console.log(BSTree)
 
-//binary tree traversal - return all the .data
-// BSTree.inorderTraversal();
-// console.log('----------')
-// BSTree.preorderTraversal();
-// console.log('----------')
-// BSTree.postorderTraversal();
-
-
 //search
 console.log(BSTree.search(BSTree.head, 70));
 console.log(BSTree.search(BSTree.head, 72));
