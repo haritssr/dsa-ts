@@ -35,7 +35,7 @@ class BinarySearchTree {
   }
 
   public inorderTraversal(root: TreeNode | null = this.head): void {
-    let temp = root;
+    const temp = root;
     if (temp !== null) {
       this.inorderTraversal(temp.left);
       console.log(temp.data);
@@ -44,7 +44,7 @@ class BinarySearchTree {
   }
 
   public preorderTraversal(root: TreeNode | null = this.head): void {
-    let temp = root;
+    const temp = root;
     if (temp !== null) {
       console.log(temp.data);
       this.inorderTraversal(temp.left);
@@ -53,7 +53,7 @@ class BinarySearchTree {
   }
 
   public postorderTraversal(root: TreeNode | null = this.head): void {
-    let temp = root;
+    const temp = root;
     if (temp !== null) {
       this.inorderTraversal(temp.left);
       this.inorderTraversal(temp.right);
@@ -62,7 +62,7 @@ class BinarySearchTree {
   }
 
   public search(node: TreeNode | null = this.head, value: number): TreeNode | null{
-    let temp = node;
+    const temp = node;
     if(temp === null){
       return null;
     } else if (temp.data === value){
@@ -78,7 +78,7 @@ class BinarySearchTree {
 }
 
 //creating trees
-let rootNode = new TreeNode(50);
+const rootNode = new TreeNode(50);
 rootNode.left = new TreeNode(35);
 rootNode.right = new TreeNode(60);
 
